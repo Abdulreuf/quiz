@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Starting Page -->
+    <div id="start-page" class="start-container">
+        <h1>Welcome to the Quiz!</h1>
+        <p>This quiz contains 5 general knowledge questions. Try your best!</p>
+        <button id="start-btn" class="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Page (Initially Hidden) -->
+    <div id="quiz-page" class="quiz-container hide">
+        <h2 id="question-title">Question will go here</h2>
+        <div id="answer-buttons" class="btn-grid">
+            <!-- Answer buttons will be dynamically generated here -->
+        </div>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+
+    <!-- Result Page (Initially Hidden) -->
+    <div id="result-page" class="result-container hide">
+        <h2>Quiz Finished!</h2>
+        <p id="result-text">You got X out of Y correct!</p>
+        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+/* Container styling for all pages */
+.start-container, .quiz-container, .result-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Heading styles */
+h1, h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide elements by default */
+.hide {
+    display: none;
+}
+
+/* Grid layout for answer buttons */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Individual answer button styles */
+.btn {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Correct answer color */
+.correct {
+    background-color: #28a745 !important;
+}
+
+/* Wrong answer color */
+.wrong {
+    background-color: #dc3545 !important;
+}
+
+/* Next button style */
+.next-btn {
+    margin-top: 20px;
+}
+
+/* Result text styling */
+#result-text {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.hide {
+    display: none;
+}
